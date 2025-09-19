@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Security";
+}
+<h1>Bienvenido</h1>
+<ul>
+    <li>ID: @User.FindFirst("Id").Value</li>
+    <li>Nombre: @User.FindFirst("Name").Value</li>
+    <li><a href="javascript:void(0);" onclick="logout('/security/logout');">Salir</a></li>
+</ul>
+
+<script>
+    function logout(path) {
+        Swal.fire({
+            title: "¿Realmente quieres cerrar sesión?",
+            icon: 'info',
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'Si',
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = path;
+            }
+        })
+    }
+</script>

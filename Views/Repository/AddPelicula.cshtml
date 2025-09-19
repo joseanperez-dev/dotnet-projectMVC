@@ -1,0 +1,44 @@
+@model projectMVC.Models.PeliculaAddEditViewModel
+@{
+    ViewData["Title"] = "Repository Pattern - Peliculas";
+    string FlashClass = (string) TempData["FlashClass"];
+    string FlashMessage = (string) TempData["FlashMessage"];
+}
+<h1>Repository Pattern - Películas - Add</h1>
+@if(FlashClass != null)
+{
+    <div class="alert alert-@FlashClass alert-dismissible fade show" role="alert">
+        @FlashMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row">
+    <form asp-controller="repository" asp-action="AddPelicula" method="POST">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Pelicula.Nombre" class="control-label">Nombre</label>
+            <input asp-for="Pelicula.Nombre" class="form-control" placeholder="Ingresa el nombre"/>
+            <span asp-validation-for="Pelicula.Nombre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Pelicula.Descripcion" class="control-label">Descripción</label>
+            <textarea asp-for="Pelicula.Descripcion" class="form-control" placeholder="Ingresa la descripción"></textarea>
+            <span asp-validation-for="Pelicula.Descripcion" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Pelicula.TematicaId" class="control-label">Nombre</label>
+            <select asp-for="Pelicula.TematicaId" class="form-control">
+                @foreach(var item in Model.Tematicas) {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+        </div>
+        <hr/>
+        <a asp-action="ListPeliculas" asp-controller="repository" class="btn btn-primary">
+            <i class="fas fa-plus"></i>Volver
+        </a>
+        <button type="submit" class="btn btn-success">
+            <i class="fas fa-plus"></i>Crear
+        </button>
+    </form>
+</div>

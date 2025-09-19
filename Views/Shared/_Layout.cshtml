@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=firefox">
+        <title>@ViewData["Title"] - projectMVC</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/bootstrap.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/projectMVC.styles.css" asp-append-version="true" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+        <link href="css/blog.css" rel="stylesheet">
+        <link href="~/css/sweetalert2.css" rel="stylesheet">
+    </head>
+    <body class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="#">Proyecto MVC</a>
+            </div>
+            </div>
+        </header>
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                @if(User.Identity.IsAuthenticated) {
+                    <a asp-controller="home" asp-action="index" class="p-2 link-secondary">Home</a>
+                    <a asp-controller="entity" asp-action="index" class="p-2 link-secondary">Entity Framework</a>
+                    <a asp-controller="repository" asp-action="index" class="p-2 link-secondary">Repository Pattern</a>
+                } else {
+                    <a asp-controller="Security" asp-action="Index" class="p-2 link-secondary">Security</a>
+                }
+            </nav>
+        </div>
+        @RenderBody()
+        <footer class="blog-footer">
+            <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo"></a>.</p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+
+        <script src="~/js/jquery-3.7.1.min.js"></script>
+        <script src="~/js/bootstrap.js"></script>
+        <script type="text/javascript" src="~/js/sweetalert2.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+        <script src="/home/jose/taller/net/projectMVC/wwwroot/js/functions.js"></script>
+    </body>
+</html>

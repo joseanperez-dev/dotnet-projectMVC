@@ -1,0 +1,75 @@
+@model IEnumerable<projectMVC.Models.Tematica>
+@{
+    ViewData["Title"] = "Repository Pattern - Tematicas";
+    string FlashClass = (string) TempData["FlashClass"];
+    string FlashMessage = (string) TempData["FlashMessage"];
+}
+<h1>Repository Pattern - Temáticas</h1>
+@if(FlashClass != null)
+{
+    <div class="alert alert-@FlashClass alert-dismissible fade show" role="alert">
+        @FlashMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row">
+    <p class="d-flex justify-content-end">
+        <a asp-action="AddTematica" asp-controller="repository" class="btn btn-success">
+            <i class="fas fa-plus"></i>Crear
+        </a>
+    </p>
+    <div class="table-responsive">
+        @if(Model.Count() > 0)
+        {
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Slug</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model) 
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(m => item.Id)</td>
+                            <td>@Html.DisplayFor(m => item.Nombre)</td>
+                            <td>@Html.DisplayFor(m => item.Slug)</td>
+                            <td>
+                                <a asp-action="EditTematica" asp-controller="repository" asp-route-id="@item.Id" class="btn btn-primary">
+                                    Edit
+                                </a>
+                                <a href="javascript:void(0);" onclick="confirmSweet('¿Desea eliminar la temática?', '/repository/tematicas/delete/@item.Id')" class="btn btn-danger">
+                                    Delete
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        } else 
+        {
+            <p>No hay registros</p>
+        }
+    </div>
+</div>
+    <script>
+    function confirmSweet(question, path) {
+    Swal.fire({
+        title: question,
+        icon: 'error',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: "Sí",
+        confirmButtonColor: "#3085d6",
+        cancelButtonText: "No",
+        cancelButtonColor: "#d33"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location=path
+        }
+    });
+}
+</script>

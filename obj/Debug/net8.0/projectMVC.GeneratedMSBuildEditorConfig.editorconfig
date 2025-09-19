@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = projectMVC
+build_property.RootNamespace = projectMVC
+build_property.ProjectDir = /home/jose/taller/net/projectMVC/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/jose/taller/net/projectMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/AddCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0FkZENhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/AddProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0FkZFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/EditCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0VkaXRDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/EditProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0VkaXRQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/ListCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0xpc3RDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/ListPaginatedProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0xpc3RQYWdpbmF0ZWRQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/ListProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0xpc3RQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/ListProductsImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L0xpc3RQcm9kdWN0c0ltYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/OrderByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L09yZGVyQnlDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Entity/SearchProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW50aXR5L1NlYXJjaFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/AddPelicula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9BZGRQZWxpY3VsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/AddTematica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9BZGRUZW1hdGljYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/EditPelicula.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9FZGl0UGVsaWN1bGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/EditTematica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9FZGl0VGVtYXRpY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/ListPeliculas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9MaXN0UGVsaWN1bGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/ListPeliculasFotos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9MaXN0UGVsaWN1bGFzRm90b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/ListPeliculasPorBuscador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9MaXN0UGVsaWN1bGFzUG9yQnVzY2Fkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/ListPeliculasPorTematica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9MaXN0UGVsaWN1bGFzUG9yVGVtYXRpY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Repository/ListTematicas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3NpdG9yeS9MaXN0VGVtYXRpY2FzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/ProtectedPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvUHJvdGVjdGVkUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Security/ResetPasswordPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvUmVzZXRQYXNzd29yZFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jose/taller/net/projectMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7v9kpavw06

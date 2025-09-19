@@ -1,0 +1,112 @@
+@model projectMVC.Pagination.PaginatedList<projectMVC.Models.Product>
+@{
+    ViewData["Title"] = "Entity Framework - Products";
+    string FlashClass = (string) TempData["FlashClass"];
+    string FlashMessage = (string) TempData["FlashMessage"];
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    var total = Model.TotalPages;
+    var totalNumericPagination = total + 1;
+    var pageNumber = ViewData["pageNumber"];
+    var category_id = ViewData["category_id"];
+}
+<h1>Entity Framework - Products (paginated)</h1>
+<h3>@ViewData["category"]</h3>
+@if(FlashClass != null)
+{
+    <div class="alert alert-@FlashClass alert-dismissible fade show" role="alert">
+        @FlashMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row">
+    <div class="table-responsive">
+        @if(Model.Count() > 0)
+        {
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Fecha</th>
+                        <th>Categoría</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model) 
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Descripction.ToString().Substring(0, (item.Descripction.Length > 10) ? 10 : item.Descripction.Length)...</td>
+                            <td>@item.Prize</td>
+                            <td>@item.Stock</td>
+                            <td>@item.Date</td>
+                            <td><a href="/entity/productsOrderByCategory/@item.Category.Id?pageNumber=1">@item.Category.Name</a></td>
+                            <td>
+                                <a asp-action="EditProducts" asp-controller="entity" asp-route-id="@item.Id">
+                                    Edit
+                                </a>
+                                <a href="javascript:void(0);" onclick="confirmSweet('¿Desea eliminar el producto?', '/entity/products/delete/@item.Id')">
+                                    <i class="fas fa-trash-alt">Delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="/entity/productsOrderByCategory/@category_id?pageNumber=1"
+                                             title="Primera">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="btn btn-default page-link @prevDisabled" href="/entity/productsOrderByCategory/@category_id?pageNumber=@(Model.PageIndex - 1)"
+                                             title="Anterior">Prev</a>
+                    </li>
+                    @for (var i=1; i < totalNumericPagination; i++) 
+                    {
+                        <li class="page-item @((int)pageNumber==i ? "active" : "")">
+                            <a class="btn btn-default page-link" href="/entity/productsOrderByCategory/@category_id?pageNumber=@i"
+                                             title="Siguiente">@i</a>
+                        </li>
+                    }
+                    <li class="page-item">
+                        <a class="btn btn-default page-link @nextDisabled" href="/entity/productsOrderByCategory/@category_id?pageNumber=@(Model.PageIndex + 1)"
+                                             title="Siguiente">Next</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="/entity/productsOrderByCategory/@category_id?pageNumber=@total"
+                                             title="Ultima">Last</a>
+                    </li>
+                </ul>
+            </nav>
+        } else 
+        {
+            <p>No hay registros</p>
+        }
+    </div>
+</div>
+    <script>
+    function confirmSweet(question, path) {
+    Swal.fire({
+        title: question,
+        icon: 'error',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: "Sí",
+        confirmButtonColor: "#3085d6",
+        cancelButtonText: "No",
+        cancelButtonColor: "#d33"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location=path
+        }
+    });
+}
+</script>
